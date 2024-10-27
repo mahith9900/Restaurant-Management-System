@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f4f6;
+}
+
+.order-container {
+    text-align: center;
+}
+
+/* Hidden Checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Style for Order Now Label (Button) */
+.order-now {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.order-now:hover {
+    background-color: #45a049;
+}
+
+/* Initially Hidden Items List */
+.items-list {
+    display: none;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Show Items List When Checkbox is Checked */
+.toggle-checkbox:checked + .order-now + .items-list {
+    display: block;
+}
+
+.items-list h3 {
+    margin-top: 0;
+}
+
+.items-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.items-list li {
+    padding: 5px 0;
+}

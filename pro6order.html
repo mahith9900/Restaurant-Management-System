@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now Opt-in</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f4f6;
+}
+
+.order-container {
+    text-align: center;
+}
+
+/* Hidden Checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Style for Order Now Label (Button) */
+.order-now {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.order-now:hover {
+    background-color: #45a049;
+}
+
+/* Initially Hidden Items List */
+.items-list {
+    display: none;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Show Items List When Checkbox is Checked */
+.toggle-checkbox:checked + .order-now + .items-list {
+    display: block;
+}
+
+.items-list h3 {
+    margin-top: 0;
+}
+
+.items-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.items-list li {
+    padding: 5px 0;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="order-container">
+        <!-- Hidden Checkbox to Control the Visibility of the Items List -->
+        <input type="checkbox" id="orderToggle" class="toggle-checkbox">
+        
+        <!-- Label for the Checkbox Acts as the Order Now Button -->
+        <label for="orderToggle" class="order-now">Order Now</label>
+        
+        <!-- Items List Section -->
+        <div class="items-list">
+            <h3>Available Items</h3>
+            <ul>
+                <h1>Starters</h1>
+                <li>Bruschetta - ₹149</li>
+                <li>Garlic Bread - ₹199</li>
+                <li>Caesar Salad - ₹159</li>
+                <li>Stuffed Mushrooms - ₹289</li>
+                <h1>Appetizers</h1>
+                <li>Chicken Wings - ₹240</li>
+                <li>Chips & Guacamole - ₹260</li>
+                <li>Mini Sliders - ₹280</li>
+                <h1>Main Course</h1>
+                <li>BBQ Ribs - ₹799</li>
+                <li>Lamb Chops - ₹1059</li>
+                <li>Sushi Platter - ₹1599</li>
+                <h1>Desserts</h1>
+                <li>Chocolate Cake - ₹770</li>
+                <li>Cheesecake - ₹880</li>
+                <li>Baklava - ₹777</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
